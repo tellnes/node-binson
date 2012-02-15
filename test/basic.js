@@ -24,7 +24,7 @@ describe('Basic', function() {
   });
 
   describe('Integer', function() {
-    
+
     // INTEGER_1
     test(0x0);
     test(0x1);
@@ -155,7 +155,7 @@ describe('Basic', function() {
     });
 
   });
-  
+
   describe('Array', function() {
     test([1,2,3]);
     test(['foo', 'baz']);
