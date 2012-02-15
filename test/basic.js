@@ -67,75 +67,77 @@ describe('Basic', function() {
   });
 
   describe('Float', function() {
-    test(2.2);
-    test(.232323);
-    test(1.7976931348623157E+308);
-    test(-1.7976931348623157E+308);
-    
 
     describe('small', function() {
 
-         test(0.0);
-         test(1.15);
-         test(1.16);
-         test(32.045);
-         test(64.171);
-         test(117.123912);
+      test(0.0);
+      test(1.15);
+      test(1.16);
+      test(32.045);
+      test(64.171);
+      test(117.123912);
 
-         test(-0);
-         test(-1.15);
-         test(-1.16);
-         test(-1.123);
-         test(-32.045);
-         test(-64.171);
-         test(-117.123912);
+      test(-0);
+      test(-1.15);
+      test(-1.16);
+      test(-1.123);
+      test(-32.045);
+      test(-64.171);
+      test(-117.123912);
 
-     });
+    });
 
-     describe('medium', function() {
+    describe('medium', function() {
 
-         test(116.2137);
-         test(256.214);
-         test(1024.001);
-         test(65535.01);
+      test(116.2137);
+      test(256.214);
+      test(1024.001);
+      test(65535.01);
 
-         test(-128.2137);
-         test(-256.214);
-         test(-1024.001);
-         test(-65535.01);
+      test(-128.2137);
+      test(-256.214);
+      test(-1024.001);
+      test(-65535.01);
 
-     });
+    });
 
-     describe('big', function() {
+    describe('big', function() {
 
-         test(65536);
-         test(5040213);
-         test(1010123024);
-         test(2147483647);
+      test(65536);
+      test(5040213);
+      test(1010123024);
+      test(2147483647);
 
-         test(-65536);
-         test(-5040213);
-         test(-1010123024);
-         test(-2147483647);
+      test(-65536);
+      test(-5040213);
+      test(-1010123024);
+      test(-2147483647);
+
+      test(1.7976931348623157E+308);
+      test(-1.7976931348623157E+308);
 
      });
   });
 
   describe('String', function() {
+
     function string(len) {
         return new Array(len +1).join('-');
     }
+
     describe('small', function() {
       test(string(0));
       test(string(1));
       test(string(28));
       test(string(29));
     });
+
     describe('medium', function() {
       test(string(30));
       test(string(128));
       test(string(255));
     });
+
     describe('ascii', function() {
       var str = '';
       for(var i = 0, l = 256; i < l; i++) {
@@ -143,6 +145,7 @@ describe('Basic', function() {
       }
       test(str);
     });
+
     describe('unicode', function() {
       var str = '';
       for(var i = 0, l = 65536; i < l; i++) {
@@ -150,6 +153,7 @@ describe('Basic', function() {
       }
       test(str);
     });
+
   });
   
   describe('Array', function() {
