@@ -1,0 +1,21 @@
+{
+  "author": "Christian Tellnes <christian@tellnes.no>",
+  "name": "binson",
+  "description": "Binary JavaScript Object Notation",
+  "version": "0.0.0",
+  "repository": {
+    "url": ""
+  },
+  "main": "lib/binson",
+  "scripts": {
+    "test": "make test"
+  },
+  "engines": {
+    "node": "0.6.x"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "mocha": "0.12.x"
+  },
+  "optionalDependencies": {}
+}
