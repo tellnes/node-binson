@@ -6,7 +6,7 @@
   "repository": {
     "url": ""
   },
-  "main": "lib/binson",
+  "main": "./",
   "scripts": {
     "test": "make test"
   },
