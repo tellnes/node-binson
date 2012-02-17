@@ -3,7 +3,7 @@ function Custom(id) {
   this.id = Number(id);
 }
 
-binson.register({
+binson.register(0, {
   constructor: Custom,
   encode: function(custom) {
     return custom.id;
