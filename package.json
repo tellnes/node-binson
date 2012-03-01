@@ -15,7 +15,8 @@
   },
   "dependencies": {},
   "devDependencies": {
-    "mocha": "0.12.x"
+    "mocha": "0.12.x",
+    "should": "~0.5.1"
   },
   "optionalDependencies": {}
 }
