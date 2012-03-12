@@ -2,7 +2,7 @@
   "author": "Christian Tellnes <christian@tellnes.no>",
   "name": "binson",
   "description": "Binary JavaScript Object Notation",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "repository": {
     "url": ""
   },
